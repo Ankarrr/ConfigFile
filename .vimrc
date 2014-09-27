@@ -12,6 +12,7 @@ Bundle 'eugeneching/consolas-powerline-vim'
 set guifont=Consolas\ for\ Powerline\ FixedD:h11
 set encoding=utf-8
 "let g:Powerline_symbols = 'fancy'
+Bundle 'ervandew/supertab'
 
 " Vim Setting "
 
@@ -30,5 +31,6 @@ set t_Co=256
 highlight Comment ctermfg=Green
 
 colorscheme molokai
+"colorscheme xterm16
 
 
