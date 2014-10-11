@@ -14,6 +14,10 @@ set encoding=utf-8
 "let g:Powerline_symbols = 'fancy'
 Bundle 'ervandew/supertab'
 
+Bundle 'scrooloose/nerdtree'
+" map :NERDTree to <fn+enter> 
+nnoremap <silent> <return> :NERDTree<CR>
+
 " Vim Setting "
 
 syntax on
@@ -28,9 +32,16 @@ set showmatch
 set laststatus=2
 set t_Co=256
 
+set expandtab
+set tabstop=4
+
 highlight Comment ctermfg=Green
 
 colorscheme molokai
 "colorscheme xterm16
+
+" Map keys "
+
+"map <ESC>[H <Home>
 
 
