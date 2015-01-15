@@ -1,0 +1,49 @@
+# PROMPT #
+
+# With user and host name 
+#PS1="\[$(tput setaf 3)\]\u_\h \[$(tput setaf 6)\]# \[$(tput setaf 5)\]\t \[$(tput setaf 6)\]@ \[$(tput setaf 2)\]\W \[$(tput setaf 6)\]> \[$(tput sgr0)\]"
+
+# Only user name 
+#PS1="\[$(tput setaf 3)\]\u \[$(tput setaf 6)\]# \[$(tput setaf 5)\]\t \[$(tput setaf 6)\]@ \[$(tput setaf 2)\]\W \[$(tput setaf 6)\]> \[$(tput sgr0)\]"
+
+# Only host name
+PS1="\[$(tput setaf 3)\]\h \[$(tput setaf 6)\]# \[$(tput setaf 5)\]\t \[$(tput setaf 6)\]@ \[$(tput setaf 2)\]\W \[$(tput setaf 6)\]> \[$(tput sgr0)\]"
+
+# ALIASES #
+
+alias ll='ls -all'
+alias lh='ls -lFh'
+alias la='ls -lFa'
+alias lA='ls -lFA'
+alias rm='rm -i'
+alias cp='cp -pi'
+alias mv='mv -i'
+alias jobs='jobs -l'
+alias less='less -RS'
+alias cls='clear'
+alias duafile='du -h -s'
+
+alias sshaws='ssh ubuntu@54.64.72.73 -i Google\ 雲端硬碟/aws/anderson.pem'
+alias cdginfo='cd /Users/anderson0817/ginfo'
+
+alias git_log='git log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset" --abbrev-commit'
+alias gitst='git status'
+
+
+case "$OSTYPE" in
+	*gnu*|*cygwin*|*msys*|*solaris*)
+		alias ls='ls --color=always -F'
+		;;
+	*freebsd*|*darwin*)
+		alias ls='CLICOLOR=1 CLICOLOR_FORCE=1 ls -F'
+		export LSCOLORS='ExGxFxdxCxDxDxhbadacad'
+		#export LSCOLORS='Exfxcxdxbxegedabagacad'
+		;;
+esac
+
+case "$OSTYPE" in
+	*gnu*|*cygwin*|*msys*|*freebsd*|*netbsd*|*solaris*|*darwin*)
+		alias grep='grep --color=always'
+		;;
+esac
+
