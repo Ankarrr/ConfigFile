@@ -1,6 +1,7 @@
 *
 
 !.bash_include
+!.bashrc
 !.vimrc
 !.vim/
 !.gitignore
